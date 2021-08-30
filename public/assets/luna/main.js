@@ -52,13 +52,13 @@
             let changeCate = function (key) {
                 goodsHtml = '';
                 goodsMsg[key].goods.forEach(function (i) {
-                    if (i.wholesale_price_cnf !== null) {
+                    if (i.wholesale_price_cnf != "" && i.wholesale_price_cnf != null) {
                         i.wholesale_price_arr = i.wholesale_price_cnf.split("\r\n");
                         i.wholesale_price_arr.forEach(function (ii, k) {
                             i.wholesale_price_arr[k] = ii.split("=");
                         })
                     }
-                    i.proportion = i.in_stock - i.sales_volume && i.in_stock ? ((i.in_stock - i.sales_volume) / i.in_stock) * 100 : 0;
+                    i.proportion = i.sales_volume && i.in_stock ? (i.in_stock / (i.in_stock + i.sales_volume)) * 100 : 0;
                     laytpl(goodsTpl).render(i, function (html) {
                         goodsHtml += html;
                     });

@@ -2,7 +2,7 @@
 
 <p align="center">
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blue" alt="license MIT"></a>
-<a href="https://github.com/assimon/dujiaoka/releases/tag/2.0.0.beta"><img src="https://img.shields.io/badge/version-2.0.0.beta-red" alt="version 2.0.0.beta"></a>
+<a href="https://github.com/assimon/dujiaoka/releases/tag/2.0.1"><img src="https://img.shields.io/badge/version-2.0.1-red" alt="version 2.0.1"></a>
 <a href="https://www.php.net/releases/7_4_0.php"><img src="https://img.shields.io/badge/PHP-7.4-lightgrey" alt="php74"></a>
 <a href="https://shang.qq.com/wpa/qunwpa?idkey=37b6b06f7c941dae20dcd5784088905d6461064d7f33478692f0c4215546cee0"><img src="https://img.shields.io/badge/QQ%E7%BE%A4-568679748-green" alt="QQ群：568679748"></a>
 </p>
@@ -11,7 +11,7 @@
 
 开源式站长自动化售货解决方案、高效、稳定、快速！
 
-demo地址：[http://dujiaoka.com](http://dujiaoka.com)
+demo地址：[http://demo.dujiaoka.com](http://demo.dujiaoka.com)
 
 - 框架来自：[laravel/framework](https://github.com/laravel/laravel).
 - 后台管理系统：[laravel-admin](https://laravel-admin.org/).
@@ -52,11 +52,11 @@ Telegram: [https://t.me/dujiaoka](https://t.me/dujiaoka) (免费，管理相对�
 ![首页.png](https://i.loli.net/2020/08/04/lZOBGXtsHxIUi6W.png)   
 ![后台.png](https://i.loli.net/2020/04/07/ZcYLqN4d2fuAI7X.png)
 
-【luna模板】
+【luna模板】 
 ![首页.png](https://i.loli.net/2020/10/24/ElKwJFsQy4a9fZi.png)
 ![订单页.png](https://i.loli.net/2020/10/24/jG5Mw137HrzOlFA.png)
 
-【hyper模板】(2.0.+版本暂未适配)
+【hyper模板】  
 ![首页.png](https://i.loli.net/2021/01/06/nHCSV5PdJIzT6Gy.png)
 
 ## 支付接口已集成
@@ -68,7 +68,6 @@ Telegram: [https://t.me/dujiaoka](https://t.me/dujiaoka) (免费，管理相对�
 - [x] 码支付(QQ/支付宝/微信)
 - [x] 微信企业扫码支付
 - [x] [Paypal支付(默认美元)](https://www.paypal.com)
-- [x] [麻瓜宝数字货币支付](https://mugglepay.com/)
 - [x] V免签支付
 - [x] 全网易支付支持(通用彩虹版)
 - [x] [stripe](https://stripe.com/)
@@ -81,7 +80,7 @@ Telegram: [https://t.me/dujiaoka](https://t.me/dujiaoka) (免费，管理相对�
 - Redis (高性能缓存服务)
 - Supervisor (一个python编写的进程管理服务)
 - Composer (PHP包管理器)
-- Linux/Win (Win下未测试，建议直接Linux)
+- Linux (Win下未测试，建议直接Linux)
 
 ## PHP环境要求
 
@@ -97,9 +96,9 @@ Telegram: [https://t.me/dujiaoka](https://t.me/dujiaoka) (免费，管理相对�
 ## 安装篇
 
 - [Linux环境安装](https://github.com/assimon/dujiaoka/wiki/linux_install)
-- [宝塔环境安装](https://github.com/assimon/dujiaoka/wiki/bt_install)
-- [2.0版本宝塔安装教程](https://github.com/assimon/dujiaoka/wiki/bt_install_2)
-- [常见问题锦集](https://github.com/assimon/dujiaoka/wiki/problems)
+- [1.x版本宝塔环境安装](https://github.com/assimon/dujiaoka/wiki/1.x_bt_install)
+- [2.x版本宝塔安装教程](https://github.com/assimon/dujiaoka/wiki/2.x_bt_install)
+- [常见问题锦集-你遇到的问题大部分能在这里找到解决！！](https://github.com/assimon/dujiaoka/wiki/problems)
 - [系统升级](https://github.com/assimon/dujiaoka/wiki/update)
 - [各支付对应后台配置](https://github.com/assimon/dujiaoka/wiki/problems#各支付对应配置)
 

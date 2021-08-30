@@ -403,7 +403,7 @@ CREATE TABLE `orders` (
   `order_sn` varchar(150) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT '订单号',
   `goods_id` int NOT NULL COMMENT '关联商品id',
   `coupon_id` int DEFAULT '0' COMMENT '关联优惠码id',
-  `title` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT '订单名称',
+  `title` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '订单名称',
   `type` tinyint(1) NOT NULL DEFAULT '1' COMMENT '1自动发货 2人工处理',
   `goods_price` decimal(10,2) NOT NULL DEFAULT '0.00' COMMENT '商品单价',
   `buy_amount` int NOT NULL DEFAULT '1' COMMENT '购买数量',
@@ -413,7 +413,7 @@ CREATE TABLE `orders` (
   `actual_price` decimal(10,2) NOT NULL DEFAULT '0.00' COMMENT '实际支付价格',
   `search_pwd` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT '' COMMENT '查询密码',
   `email` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT '下单邮箱',
-  `info` text CHARACTER SET utf8 COLLATE utf8_unicode_ci COMMENT '订单详情',
+  `info` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci COMMENT '订单详情',
   `pay_id` int DEFAULT NULL COMMENT '支付通道id',
   `buy_ip` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT '购买者下单IP地址',
   `trade_no` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT '' COMMENT '第三方支付订单号',
@@ -473,7 +473,6 @@ INSERT INTO `pays` VALUES (14, '易支付-支付宝', 'alipay', 1, 1, '商户号
 INSERT INTO `pays` VALUES (15, '易支付-微信', 'wxpay', 1, 1, '商户号', NULL, '密钥', '/pay/yipay', 1, '2020-07-14 16:27:06', NULL, NULL);
 INSERT INTO `pays` VALUES (16, '易支付-QQ 钱包', 'qqpay', 1, 1, '商户号', NULL, '密钥', '/pay/yipay', 1, '2020-07-14 16:27:03', NULL, NULL);
 INSERT INTO `pays` VALUES (17, 'PayPal', 'paypal', 1, 1, '商户号', NULL, '密钥', '/pay/paypal', 1, '2020-07-14 16:25:20', NULL, NULL);
-INSERT INTO `pays` VALUES (18, 'Mugglepay 数字货币', 'mgcoin', 1, 1, '商户号', NULL, '密钥', '/pay/mugglepay', 1, '2020-07-14 16:27:00', NULL, NULL);
 INSERT INTO `pays` VALUES (19, 'V 免签支付宝', 'vzfb', 1, 1, 'V 免签通讯密钥', NULL, 'V 免签地址 例如 https://vpay.qq.com/    结尾必须有/', 'pay/vpay', 1, '2020-05-01 13:15:56', '2020-05-01 13:18:29', NULL);
 INSERT INTO `pays` VALUES (20, 'V 免签微信', 'vwx', 1, 1, 'V 免签通讯密钥', NULL, 'V 免签地址 例如 https://vpay.qq.com/    结尾必须有/', 'pay/vpay', 1, '2020-05-01 13:17:28', '2020-05-01 13:18:38', NULL);
 INSERT INTO `pays` VALUES (21, 'Stripe[微信支付宝]', 'stripe', 1, 1, 'pk开头的可发布密钥', NULL, 'sk开头的密钥', 'pay/stripe', 1, '2020-10-29 13:15:56', '2020-10-29 13:18:29', NULL);
